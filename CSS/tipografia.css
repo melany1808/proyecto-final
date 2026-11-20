@@ -1,0 +1,84 @@
+
+/* tipografia general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+/*  titulos principales */
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--rosa-profundo);
+    text-align: center;
+}
+h2 {
+    font-size: 1.8rem;
+    color: var(--rosa-oscuro);
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.3rem;
+    color: var(--rosa-profundo);
+}
+h4 {
+    font-size: 1.1rem;
+    color: var(--rosa-oscuro);
+}
+/* los parrafos */
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 65ch;
+}
+/* textos */
+.portada__etiqueta {
+    color: var(--rosa-oscuro);
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.tarjeta__precio {
+    color: var(--rosa-oscuro);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+blockquote {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: center;
+}
+cite {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+figcaption {
+    font-size: 0.9rem;
+    color: var(--rosa-profundo);
+}
+caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--rosa-profundo);
+}
+address {
+    line-height: 1.6;
+}
+/* las listas y tablas  */
+th {
+    font-weight: bold;
+}
+td {
+    font-size: 0.95rem;
+}
+label {
+    font-weight: bold;
+}
+button,
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}

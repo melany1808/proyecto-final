@@ -1,0 +1,105 @@
+
+.contenedor {
+    width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.seccion {
+    padding: 3rem 1.5rem;
+    margin: 1rem auto;
+}
+.seccion__titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* Portada principal */
+.portada {
+    min-height: 65vh;
+    padding: 4rem 1.5rem;
+    background-image:
+        linear-gradient(var(--rosa-transparente), var(--rosa-transparente)),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1400");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+.portada__contenido {
+    max-width: 45rem;
+    padding: 2rem;
+    background-color: var(--crema);
+    border-radius: 1rem;
+}
+/* Tarjetas */
+.tarjeta {
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-rosa);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    margin: 0.5rem;
+}
+.tarjeta__imagen {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+.tarjeta__contenido {
+    padding: 0.5rem;
+}
+.tarjeta--destacada {
+    border: 2px solid var(--rosa-medio);
+    background-color: var(--rosa-claro);
+}
+/*  Presentacion y los productos */
+.presentacion {
+    padding: 2rem;
+    background-color: var(--rosa-claro);
+    border-radius: 1rem;
+    text-align: center;
+}
+.productos {
+    padding: 2rem 0;
+}
+.productos__tarjeta {
+    text-align: center;
+}
+/*  sedes*/
+.sedes__galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.sedes__imagen {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+/*  citas */
+blockquote {
+    background-color: var(--rosa-claro);
+    border-left: 0.35rem solid var(--rosa-oscuro);
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+.bloque-destacado {
+    background-color: var(--rosa-pastel);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2rem auto;
+}
+/* imagenes */
+figure {
+    margin: 0;
+}
+figcaption {
+    padding: 0.8rem;
+    text-align: center;
+}

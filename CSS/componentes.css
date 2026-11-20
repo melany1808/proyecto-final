@@ -1,0 +1,122 @@
+
+/* tablas */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+}
+caption {
+    padding: 1rem;
+}
+th,
+td {
+    border: 1px solid var(--gris-rosa);
+    padding: 0.8rem;
+    text-align: left;
+}
+thead {
+    background-color: var(--rosa-pastel);
+    color: var(--rosa-profundo);
+}
+tbody tr:nth-child(even) {
+    background-color: var(--rosa-claro);
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--blanco);
+}
+td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+/* formularios*/
+.formulario {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-rosa);
+    border-radius: 1rem;
+}
+.formulario fieldset {
+    border: 1px solid var(--rosa-medio);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.formulario legend {
+    color: var(--rosa-profundo);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.formulario label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gris-rosa);
+    border-radius: 0.5rem;
+    background-color: var(--crema);
+    color: var(--texto);
+}
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+.formulario textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: 2px solid var(--rosa-oscuro);
+    border-color: var(--rosa-oscuro);
+}
+.formulario input:required,
+.formulario select:required {
+    border-left: 3px solid var(--rosa-medio);
+}
+/* botones*/
+.boton--secundario {
+    background-color: var(--blanco);
+    color: var(--rosa-profundo);
+    border: 2px solid var(--rosa-oscuro);
+}
+.boton--secundario:hover {
+    background-color: var(--rosa-claro);
+    color: var(--rosa-profundo);
+}
+.boton:focus,
+.boton--secundario:focus {
+    outline: 2px solid var(--rosa-profundo);
+    outline-offset: 3px;
+}
+/* enlaces */
+a[href^="https"] {
+    text-decoration: underline;
+}
+a:not([aria-current="page"]):hover {
+    color: var(--rosa-profundo);
+}
+:is(h2, h3) {
+    letter-spacing: 0.02rem;
+}
+/* listas */
+.lista-especialidades {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+.lista-especialidades li {
+    margin-bottom: 0.5rem;
+}

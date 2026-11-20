@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- principal -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserva tu mesa en Café Altiplano y disfruta de una experiencia especial.">
+    <title>Reservas | Café Altiplano</title>
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/tipografia.css">
+    <link rel="stylesheet" href="css/cajas.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <!-- el encabezado, navegacion -->
+    <header class="encabezado">
+        <a href="index.html" class="encabezado__logo">
+            Café Altiplano
+        </a>
+        <nav class="navegacion" aria-label="Menú principal">
+            <ul class="navegacion__lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Nuestra carta</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="reservas.html" aria-current="page">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- PRINCIPAL -->
+    <main class="contenedor">
+        <!-- reservas -->
+        <section class="portada-reservas">
+            <h1>Reserva tu momento especial</h1>
+            <p>
+        Reserva tu mesa y comparte momentos inolvidables con nosotros.
+            </p>
+            <img
+                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1000"
+                alt="Ambiente acogedor y tranquilo">
+        </section>
+        <!-- formulario para las reservas -->
+        <section class="seccion-reservas">
+            <h2>Formulario para reservar</h2>
+            <p>
+                Completa los siguientes datos para solicitar
+                tu reserva en nuestra cafetería.
+            </p>
+            <form class="formulario" action="#" method="get">
+                <!-- datos clientes -->
+                <fieldset>
+                    <legend>Información del cliente</legend>
+                    <div class="formulario__grupo">
+                        <label for="nombre">Nombre completo:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            required>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            required>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="telefono">Número de contacto:</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Ejemplo: 3125948300"
+                            required>
+                    </div>
+                </fieldset>
+                <!-- otra informacion de la reserva -->
+                <fieldset>
+                    <legend>Detalles de la reserva</legend>
+                    <div class="formulario__grupo">
+                        <label for="sede">Selecciona una sede:</label>
+                        <select id="sede" name="sede" required>
+                            <option value="">Elige una sede</option>
+                            <option value="cabecera">Cabecera</option>
+                            <option value="centro">Centro</option>
+                            <option value="canaveral">Cañaveral</option>
+                        </select>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="fecha">Fecha para la  reserva:</label>
+                        <input
+                            type="date"
+                            id="fecha"
+                            name="fecha"
+                            required>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="hora">Hora de la reserva:</label>
+                        <select id="hora" name="hora" required>
+                            <option value="">Selecciona una hora</option>
+                            <option value="09:00">9:00 a. m.</option>
+                            <option value="10:00">10:00 a. m.</option>
+                            <option value="11:00">11:00 a. m.</option>
+                            <option value="12:00">12:00 p. m.</option>
+                            <option value="14:00">2:00 p. m.</option>
+                            <option value="15:00">3:00 p. m.</option>
+                            <option value="16:00">4:00 p. m.</option>
+                            <option value="17:00">5:00 p. m.</option>
+                            <option value="18:00">6:00 p. m.</option>
+                        </select>
+                    </div>
+                    <div class="formulario__grupo">
+                        <label for="personas">Cantidad de personas:</label>
+                        <input
+                            type="number"
+                            id="personas"
+                            name="personas"
+                            min="1"
+                            max="12"
+                            placeholder="Ejemplo: 2"
+                            required>
+                    </div>
+                </fieldset>
+                <!-- motivo de la reserva -->
+                <fieldset>
+                    <legend>Motivo de la visita</legend>
+                    <p>¿Cuál es el motivo de tu visita?</p>
+                    <div class="formulario__opciones">
+                        <label>
+                            <input
+                                type="radio"
+                                name="ocasion"
+                                value="reunion"
+                                required>
+                            Reunión con amigos
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                name="ocasion"
+                                value="cumpleanos">
+                            Cumpleaños
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                name="ocasion"
+                                value="familiar">
+                            Encuentro familiar
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                name="ocasion"
+                                value="personal">
+                            Visita 
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- preferencias -->
+                <fieldset>
+                    <legend>Preferencias adicionales</legend>
+                    <div class="formulario__grupo">
+                        <label for="comentarios">
+                            ¿Tienes algun pedido en  especial?
+                        </label>
+                        <textarea
+                            id="comentarios"
+                            name="comentarios"
+                            rows="5"
+                            placeholder="Cuéntanos si tienes alguna solicitud especial..."></textarea>
+                    </div>
+                    <div class="formulario__grupo formulario__checkbox">
+                        <label for="aceptar">
+                            <input
+                                type="checkbox"
+                                id="aceptar"
+                                name="aceptar"
+                                value="si"
+                                required>
+                            Acepto que mis datos sean utilizados
+                            para esta solicitud de reserva.
+                        </label>
+                    </div>
+                </fieldset>
+                <!-- botones -->
+                <div class="formulario__acciones">
+                    <button type="submit" class="boton">
+                        Solicitar reserva
+                    </button>
+                    <button type="reset" class="boton boton--secundario">
+                        Limpiar formulario
+                    </button>
+                </div>
+            </form>
+        </section>
+        <!-- frases de decoracion  -->
+        <aside class="frase">
+            <blockquote>
+                "Los mejores recuerdos se crean alrededor de una mesa."
+            </blockquote>
+            <cite>— Café Altiplano</cite>
+        </aside>
+    </main>
+    <!-- pie de pagina  -->
+    <footer class="pie">
+        <p> 2026 Café Altiplano.</p>
+        <p>Un rincón dulce para disfrutar cada momento.</p>
+        <a href="https://www.pexels.com/es-es/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Pagina para las imagenes 
+        </a>
+    </footer>
+</body>
+</html>

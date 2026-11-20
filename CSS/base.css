@@ -1,0 +1,111 @@
+ /* colores */
+:root {
+    --rosa-claro: #efa7be;
+    --rosa-pastel: #eab6c6;
+    --rosa-medio: #ed7096;
+    --rosa-oscuro: #c86788;
+    --rosa-profundo: #981645;
+    --blanco: #f8d7d7;
+    --crema: #ffbdd9;
+    --texto: #91395f;
+    --borde-rosa: #ff599e;
+}
+  /* configuracion */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    margin: 0;
+    background-color: var(--crema);
+    color: var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    color: var(--rosa-oscuro);
+    text-decoration: none;
+}
+ /* encabezado */
+.encabezado {
+    background: linear-gradient(
+        90deg,
+        var(--rosa-pastel ),
+        var(--rosa-claro),
+        var(--rosa-medio)
+    );
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.encabezado__logo {
+    display: inline-block;
+    color: var(--rosa-profundo);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+ /* el menu */
+.navegacion__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navegacion__lista li {
+    margin: 0.5rem;
+}
+.navegacion__lista a {
+    color: var(--rosa-profundo);
+    font-weight: bold;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+    border-radius: 0.6rem;
+}
+.navegacion__lista a:hover {
+    background-color: var(--blanco);
+}
+.navegacion__lista a:focus {
+    outline: 2px solid var(--rosa-profundo);
+}
+.navegacion__lista a[aria-current="page"] {
+    background-color: var(--rosa-oscuro);
+    color: var(--blanco);
+}
+/* Botones*/
+.boton {
+    display: inline-block;
+    background-color: var(--rosa-oscuro);
+    color: var(--blanco);
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    border: 2px solid var(--rosa-oscuro);
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: var(--rosa-profundo);
+    border-color: var(--rosa-profundo);
+}
+.boton:focus {
+    outline: 2px solid var(--rosa-profundo);
+    outline-offset: 3px;
+}
+ /* Pie de pagina  */
+.pie {
+    background-color: var(--rosa-pastel);
+    color: var(--rosa-profundo);
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+.pie a {
+    color: var(--rosa-profundo);
+    text-decoration: underline;
+}
