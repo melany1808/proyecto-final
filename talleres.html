@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres y eventos | Café Altiplano</title>
+
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/tipografia.css">
+    <link rel="stylesheet" href="CSS/cajas.css">
+    <link rel="stylesheet" href="CSS/componentes.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/talleres.css">
+</head>
+
+<body>
+
+    <!-- CABECERA Y NAVEGACIÓN -->
+    <header class="encabezado">
+        <h2>Café Altiplano</h2>
+
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carta.html">Carta</a></li>
+                <li><a href="sedes.html">Sedes</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="talleres.html" aria-current="page">Talleres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="taller__portada">
+        <div class="taller__portada-contenido">
+            <h1>Talleres y eventos</h1>
+            <p>
+                Aprende, experimenta y descubre el maravilloso mundo del café
+                en nuestros talleres mensuales.
+            </p>
+        </div>
+    </section>
+
+    <main class="contenedor-grid">
+
+        <!-- INTRODUCCIÓN -->
+        <section class="taller__introduccion">
+            <h2>Aprende con nosotros</h2>
+            <p>
+                Cada mes abrimos nuestras sedes para aprender sobre café:
+                desde probar sin ver la etiqueta hasta dibujar corazones
+                en la espuma. Los cupos son limitados.
+            </p>
+        </section>
+        <figure class="taller__imagen">
+    <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1000"
+        alt="Mesa con diferentes preparaciones de café">
+    <figcaption>
+        Descubre nuevas experiencias alrededor del café.
+    </figcaption>
+</figure>
+        <!-- AGENDA -->
+        <section class="taller__agenda bloque-destacado">
+            <h2>Agenda de talleres</h2>
+
+            <div class="taller__tabla-contenedor">
+                <table class="taller__tabla">
+                    <caption>Próximos talleres de Café Altiplano</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Taller</th>
+                            <th scope="col">Sede</th>
+                            <th scope="col">Duración</th>
+                            <th scope="col">Cupos</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>7 de marzo</td>
+                            <td>Cata a ciegas</td>
+                            <td>Centro</td>
+                            <td>2 h</td>
+                            <td>12</td>
+                            <td>$ 18</td>
+                        </tr>
+                        <tr>
+                            <td>14 de marzo</td>
+                            <td>Latte art para principiantes</td>
+                            <td>Norte</td>
+                            <td>3 h</td>
+                            <td>8</td>
+                            <td>$ 35</td>
+                        </tr>
+                        <tr>
+                            <td>21 de marzo</td>
+                            <td>Métodos de filtrado en casa</td>
+                            <td>Centro</td>
+                            <td>2 h</td>
+                            <td>15</td>
+                            <td>$ 22</td>
+                        </tr>
+                        <tr>
+                            <td>28 de marzo</td>
+                            <td>Del grano a la taza: tueste y origen</td>
+                            <td>Sur</td>
+                            <td>3 h</td>
+                            <td>10</td>
+                            <td>$ 40</td>
+                        </tr>
+                        <tr>
+                            <td>4 de abril</td>
+                            <td>Café y repostería: maridaje</td>
+                            <td>Norte</td>
+                            <td>2 h</td>
+                            <td>12</td>
+                            <td>$ 28</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- GALERÍA DE TALLERES -->
+        <section class="taller__galeria">
+            <h2>Conoce nuestros talleres</h2>
+
+            <div class="taller__tarjetas">
+
+                <article class="taller__tarjeta">
+                    <h3>Cata a ciegas</h3>
+                    <p>Reconoce aromas y sabores sin ver la etiqueta.</p>
+                    <p><strong>Nivel:</strong> Básico</p>
+                </article>
+
+                <article class="taller__tarjeta">
+                    <h3>Latte art para principiantes</h3>
+                    <p>Primeros dibujos en la espuma: corazón y hoja.</p>
+                    <p><strong>Nivel:</strong> Básico</p>
+                </article>
+
+                <article class="taller__tarjeta">
+                    <h3>Métodos de filtrado en casa</h3>
+                    <p>Prensa, filtro y moka: cuándo usar cada uno.</p>
+                    <p><strong>Nivel:</strong> Intermedio</p>
+                </article>
+
+                <article class="taller__tarjeta">
+                    <h3>Del grano a la taza</h3>
+                    <p>Cómo el tueste y el origen cambian el sabor.</p>
+                    <p><strong>Nivel:</strong> Intermedio</p>
+                </article>
+
+                <article class="taller__tarjeta">
+                    <h3>Café y repostería</h3>
+                    <p>Combinaciones que se potencian.</p>
+                    <p><strong>Nivel:</strong> Básico</p>
+                </article>
+
+                <article class="taller__tarjeta">
+                    <h3>Pequeños baristas</h3>
+                    <p>Taller para niñas y niños de 8 a 12 años, con un adulto.</p>
+                    <p><strong>Nivel:</strong> Básico</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CÓMO INSCRIBIRSE -->
+        <section class="taller__inscripcion">
+            <h2>¿Cómo inscribirte?</h2>
+
+            <ol>
+                <li>Elegí el taller y la fecha.</li>
+                <li>Completá el formulario de esta página.</li>
+                <li>Recibirás la confirmación por correo en 24 horas.</li>
+                <li>Presentate 10 minutos antes en la sede.</li>
+            </ol>
+        </section>
+
+        <!-- QUÉ INCLUYE -->
+        <section class="taller__incluye">
+            <h2>¿Qué incluye cada taller?</h2>
+
+            <ul>
+                <li>Todos los materiales.</li>
+                <li>Degustación de tres cafés.</li>
+                <li>Certificado de participación.</li>
+                <li>10 % de descuento en la carta ese día.</li>
+            </ul>
+        </section>
+
+        <!-- NIVELES -->
+        <section class="taller__niveles">
+            <h2>Niveles de aprendizaje</h2>
+
+            <dl>
+                <dt>Básico</dt>
+                <dd>No requiere experiencia previa.</dd>
+
+                <dt>Intermedio</dt>
+                <dd>Conviene haber asistido a un taller básico.</dd>
+            </dl>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section class="taller__formulario bloque-destacado">
+            <h2>Inscríbete a un taller</h2>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Datos de inscripción</legend>
+
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Escribe tu nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo"
+                        placeholder="ejemplo@correo.com" required>
+
+                    <label for="taller">Selecciona un taller:</label>
+                    <select id="taller" name="taller" required>
+                        <option value="">Elige una opción</option>
+                        <option value="cata">Cata a ciegas</option>
+                        <option value="latte">Latte art para principiantes</option>
+                        <option value="filtrado">Métodos de filtrado en casa</option>
+                        <option value="grano">Del grano a la taza</option>
+                        <option value="reposteria">Café y repostería</option>
+                    </select>
+
+                    <p>Selecciona tu nivel:</p>
+
+                    <label for="basico">Básico</label>
+                    <input type="radio" id="basico" name="nivel"
+                        value="basico" required>
+
+                    <label for="intermedio">Intermedio</label>
+                    <input type="radio" id="intermedio" name="nivel"
+                        value="intermedio">
+
+                    <label for="acompanantes">Número de acompañantes:</label>
+                    <input type="number" id="acompanantes"
+                        name="acompanantes" min="0" max="3"
+                        placeholder="De 0 a 3" required>
+
+                    <label for="recordatorios">
+                        <input type="checkbox" id="recordatorios"
+                            name="recordatorios" value="si">
+                        Quiero recibir recordatorios
+                    </label>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"
+                        rows="5" placeholder="Escribe tus comentarios"></textarea>
+
+                    <button type="submit">Inscribirme</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+        <p>&copy; 2026 Café Altiplano. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
