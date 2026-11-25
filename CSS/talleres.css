@@ -1,0 +1,286 @@
+
+/* PORTADA DE TALLERES */
+.taller__portada {
+    width: 100%;
+    min-height: 55vh;
+    padding: 3rem 1rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--rosa-claro),
+        var(--rosa-medio),
+        var(--rosa-oscuro)
+    );
+}
+
+.taller__portada-contenido {
+    width: 90%;
+    max-width: 55rem;
+    padding: 2rem;
+    background-color: var(--rosa-transparente);
+    border-radius: 1rem;
+}
+
+.taller__portada h1 {
+    color: var(--rosa-profundo);
+    font-size: 2.5rem;
+}
+
+.taller__portada p {
+    max-width: 55ch;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+
+/* SECCIONES GENERALES */
+.taller__introduccion,
+.taller__agenda,
+.taller__galeria,
+.taller__inscripcion,
+.taller__incluye,
+.taller__niveles,
+.taller__formulario {
+    padding: 1.5rem;
+    background-color: var(--blanco);
+    border: 1px solid var(--gris-rosa);
+    border-radius: 1rem;
+}
+
+.taller__introduccion p {
+    max-width: 65ch;
+    line-height: 1.7;
+}
+
+.taller__agenda,
+.taller__formulario {
+    min-width: 0;
+}
+
+.taller__galeria {
+    grid-column: 1 / -1;
+}
+
+/* TITULOS */
+.taller__introduccion h2,
+.taller__agenda h2,
+.taller__galeria h2,
+.taller__inscripcion h2,
+.taller__incluye h2,
+.taller__niveles h2,
+.taller__formulario h2 {
+    color: var(--rosa-profundo);
+    margin-bottom: 1rem;
+}
+
+.taller__tarjeta :is(h3, p) {
+    line-height: 1.6;
+}
+
+/* TABLA DE AGENDA */
+.taller__tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.taller__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--crema);
+}
+
+.taller__tabla caption {
+    padding: 1rem;
+    color: var(--rosa-profundo);
+    font-weight: bold;
+}
+
+.taller__tabla th,
+.taller__tabla td {
+    padding: 0.8rem;
+    border: 1px solid var(--gris-rosa);
+    text-align: left;
+}
+
+.taller__tabla th {
+    background-color: var(--rosa-pastel);
+    color: var(--rosa-profundo);
+}
+
+.taller__tabla tbody tr:nth-child(even) {
+    background-color: var(--rosa-claro);
+}
+
+.taller__tabla td:nth-child(5),
+.taller__tabla td:nth-child(6) {
+    text-align: right;
+}
+
+/* GALERIA DE TARJETAS */
+.taller__tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.taller__tarjeta {
+    padding: 1.5rem;
+    margin: 0.3rem;
+    border: 1px solid var(--gris-rosa);
+    border-radius: 1rem;
+    background-color: var(--crema);
+}
+
+.taller__tarjeta h3 {
+    color: var(--rosa-oscuro);
+    margin-bottom: 0.8rem;
+}
+
+.taller__tarjeta p {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+/* LISTAS */
+.taller__inscripcion ol,
+.taller__incluye ul {
+    padding-left: 1.5rem;
+    line-height: 2;
+}
+
+.taller__niveles dt {
+    color: var(--rosa-profundo);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.taller__niveles dd {
+    margin-left: 1rem;
+    line-height: 1.6;
+}
+
+/* FORMULARIO */
+.taller__formulario form {
+    width: 100%;
+}
+
+.taller__formulario fieldset {
+    padding: 1.5rem;
+    border: 1px solid var(--rosa-medio);
+    border-radius: 1rem;
+}
+
+.taller__formulario legend {
+    color: var(--rosa-profundo);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.taller__formulario label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.taller__formulario input:not([type="radio"]):not([type="checkbox"]),
+.taller__formulario select,
+.taller__formulario textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--gris-rosa);
+    border-radius: 0.5rem;
+    background-color: var(--crema);
+    font-size: 1rem;
+}
+
+.taller__formulario input[type="radio"],
+.taller__formulario input[type="checkbox"] {
+    margin: 0.5rem;
+    accent-color: var(--rosa-oscuro);
+}
+
+.taller__formulario p {
+    margin-top: 1rem;
+}
+
+.taller__formulario button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--rosa-profundo);
+    border-radius: 0.5rem;
+    background-color: var(--rosa-oscuro);
+    color: var(--blanco);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ESTADOS DE INTERACCIÓN */
+.navegacion__lista a[aria-current="page"] {
+    color: var(--rosa-profundo);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navegacion__lista a:hover,
+.navegacion__lista a:focus {
+    color: var(--rosa-oscuro);
+    outline: 2px solid var(--rosa-medio);
+    outline-offset: 3px;
+}
+
+.taller__formulario button:hover,
+.taller__formulario button:focus {
+    background-color: var(--rosa-profundo);
+    outline: 2px solid var(--rosa-medio);
+    outline-offset: 3px;
+}
+
+.taller__formulario input:focus,
+.taller__formulario select:focus,
+.taller__formulario textarea:focus {
+    outline: 2px solid var(--rosa-oscuro);
+    outline-offset: 2px;
+}
+
+/* TABLETAS */
+@media (min-width: 600px) {
+    .taller__agenda,
+    .taller__formulario {
+        grid-column: span 2;
+    }
+
+    .taller__portada h1 {
+        font-size: 3rem;
+    }
+}
+
+/* COMPUTADORES */
+@media (min-width: 900px) {
+    .taller__portada {
+        min-height: 65vh;
+    }
+
+    .taller__portada-contenido {
+        padding: 3rem;
+    }
+}
+/* IMAGEN DE TALLERES */
+.taller__imagen {
+    width: 100%;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.taller__imagen img {
+    width: 100%;
+    max-width: 35rem;
+    border-radius: 1rem;
+    border: 2px solid var(--rosa-medio);
+}
+
+.taller__imagen figcaption {
+    margin-top: 0.5rem;
+    color: var(--rosa-profundo);
+    font-size: 0.9rem;
+}
